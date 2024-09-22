@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Dark black background */
+    color: #fff; /* White text color for visibility on the dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+/* From Uiverse.io by akshat-patel28 */ 
+.tooltip-container {
+    position: relative;
+    background: #f80254;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    padding: 14px 26px ;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .tooltip-1,
+  .tooltip-2,
+  .tooltip-3 {
+    position: absolute;
+    transform: translateX(-50%);
+    font-weight: 800;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 8px 8px 8px 8px;
+    background: #ffdb0f;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    min-width: 160px;
+    padding: 8px;
+    color: #ac0039;
+    font-size: 18px;
+  }
+  .tooltip-1 {
+    top: 0%;
+    left: 50%;
+    width: 200px;
+  }
+  .tooltip-2 {
+    left: 100%;
+  }
+  
+  .tooltip-3 {
+    left: 0;
+  }
+  .tooltip-container:hover .tooltip-1 {
+    top: -150%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .tooltip-container:hover .tooltip-2 {
+    left: -150%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .tooltip-container:hover .tooltip-3 {
+    left: 250%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+.task-manager {
+    background-color: #333; /* Darker grey for the task manager background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Slight white shadow */
+    width: 300px;
+}
+
+.task-manager h1 {
+    text-align: center;
+    color: #fff; /* White text color for the title */
+}
+
+.task-input {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555; /* Slightly darker border */
+    background-color: #545353; /* Dark grey input background */
+    color: #fff; /* White text color */
+}
+
+#add-task {
+    background-color: #e83e8c; /* Pink button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#add-task:hover {
+    background-color: #f54859;
+}
+
+.tasks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-box {
+    background-color: #ccc; /* Light grey background for the task boxes */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Slight white shadow */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-box input {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    width: 70%;
+    outline: none;
+    color: #333; /* Darker text color to contrast with light grey background */
+}
+
+.task-box button {
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.task-box button.edit {
+    background-color: #28a745; /* Green color for edit button */
+}
+
+.task-box button.edit:hover {
+    background-color: #218838;
+}
+
+.task-box button.delete {
+    background-color: #007bff; /* Blue color for delete button */
+}
+
+.task-box button.delete:hover {
+    background-color: #0056b3;
+}
+
+.success-message {
+    color: #28a745; /* Green color for success message */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.success-message span {
+    background-color: #28a745;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+}
